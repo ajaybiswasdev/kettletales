@@ -1,0 +1,48 @@
+# WordPress core files
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-config.php
+wp-cron.php
+wp-includes/
+wp-admin/
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+license.txt
+readme.html
+index.php
+
+# All plugins (not custom)
+wp-content/plugins/
+
+# Default themes
+wp-content/themes/twenty*/
+
+# Uploads & caches
+wp-content/uploads/
+wp-content/cache/
+wp-content/jetpack-waf/
+wp-content/upgrade/
+
+# Config
+.htaccess
+wp-config.php.bak
+
+# System
+.DS_Store
+Thumbs.db
+cookies.txt
+.git/
+
+# Logs
+wp-content/debug.log
+
+# Old HTML reference (optional - keep if you want)
+kettletales-html/
