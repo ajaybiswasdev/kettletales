@@ -112,10 +112,9 @@ body.admin-bar .kt-hero-topbar{top:62px}
 .section-heading{margin-bottom:60px}
 .section-heading h2{font-size:3rem;font-family:"Lavishly Yours",cursive;font-weight:500}
 .section-heading h3{font-family:"Lavishly Yours",cursive;color:#7d8d2d;font-weight:500}
-.product-card{border-radius:10px;height:100%;transition:.3s;display:flex}
-@media(max-width:1200px){.product-card{flex-direction:column}}
+.product-card{border-radius:10px;height:100%;transition:.3s;display:flex;flex-direction:column;background:#fff;overflow:hidden}
 .product-card:hover{transform:translateY(-5px)}
-.product-card img{max-width:19.75rem}
+.product-card img{max-width:100%;width:100%;height:auto;object-fit:contain}
 .product-card span{color:#b0cb1f;font-weight:700}
 .parallax-wrapper{position:absolute;inset:0;z-index:1}
 .parallax-bg{width:100%;height:120%;object-fit:cover}
@@ -177,8 +176,14 @@ body.admin-bar .kt-hero-topbar{top:62px}
 .product-card a{text-decoration:none;color:inherit;display:block}
 .product-card a img{transition:.3s}
 .product-card:hover a img{transform:scale(1.02)}
-.product-card .product-content h4 a{text-decoration:none;color:#7b9201}
+.product-card .product-content{text-align:center;padding:14px 16px 20px}
+.product-card .product-content h4{margin:0 0 6px}
+.product-card .product-content h4 a{text-decoration:none;color:#7b9201;font-size:15px;font-weight:600;font-family:"Inter",sans-serif;display:block;line-height:1.4}
 .product-card .product-content h4 a:hover{text-decoration:underline}
+.product-card .product-content p{font-size:13px;color:#666;line-height:1.5;margin-bottom:8px}
+.product-card .product-image-wrap{position:relative;overflow:hidden;border-radius:12px 12px 0 0;background:#f9f9f9}
+.product-card .product-image-wrap img{width:100%;height:280px;object-fit:contain;transition:.3s;display:block;padding:15px}
+.product-card:hover .product-image-wrap img{transform:scale(1.03)}
 .woocommerce-wrapper .row.g-4{row-gap:2rem}
 .woocommerce-wrapper .product-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08);text-align:center;position:relative;display:block;height:auto}
 .woocommerce-wrapper .product-card .product-image-wrap{display:block;position:relative;overflow:hidden;border-radius:12px 12px 0 0;background:#f9f9f9; text-align: center;}
