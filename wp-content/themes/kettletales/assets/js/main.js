@@ -298,4 +298,19 @@ $(document.body).on("added_to_cart removed_from_cart", function() {
     $(document.body).trigger("wc_fragment_refresh");
 });
 
+/* Shop Header Mobile Menu Toggle */
+$(document).ready(function() {
+    $('.shop-menu-toggle').on('click', function() {
+        $('.shop-mobile-menu').toggleClass('active');
+        var $icon = $(this).find('i');
+        $icon.toggleClass('fa-bars fa-times');
+    });
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.shop-header').length) {
+            $('.shop-mobile-menu').removeClass('active');
+            $('.shop-menu-toggle i').removeClass('fa-times').addClass('fa-bars');
+        }
+    });
+});
+
 })(jQuery);
