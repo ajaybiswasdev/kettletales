@@ -22,7 +22,6 @@ video{max-width:100%}
 .header .logo a{pointer-events:auto}
 .header .logo-img{max-width:200px;height:auto}
 @media(max-width:575px){.header .logo-img{max-width:100px}.header .logo{padding-left:1rem}}
-@media(max-width:991px){.header{position:relative;width:100%;z-index:10;padding:50px 0 0;text-align:center}.header .logo{padding:0;display:flex;justify-content:center}.header .logo-img{max-width:110px}}
 .header .header-contact{position:absolute;right:0;top:40px;left:0;z-index:10;pointer-events:auto}
 .header .header-contact a{color:#fff;text-decoration:none}
 .nav-links .orderLabel{font-size:13px;color:#b6d335;letter-spacing:1px}
@@ -107,7 +106,7 @@ body.admin-bar .kt-hero-topbar{top:62px}
 [data-scroll-container]{min-height:100vh}
 @media(min-width:992px){.side-menu ul li{margin:28px 0}.side-menu a{font-size:14px}}
 @media(min-width:1200px){.side-menu a{font-size:16px}}
-@media(max-width:991px){.header{position:relative;padding:50px 0 0;text-align:center;z-index:10}.header .logo{padding:0;display:flex;justify-content:center}.header .logo-img{max-width:110px}.hero-section .overlay{border-radius:0 0 150px 0}.hero-section .container{padding-top:2rem}.bannerCaption{padding-top:0}.hero-section .row.min-vh-100{min-height:auto;padding-bottom:60px}.hero-title{font-size:3rem}.hero-desc{max-width:100%}.quality-badges{max-width:100%;margin-bottom:50px}.btn-shop{font-size:20px;padding:16px 32px}.badge-custom{margin-bottom:8px}.tea-slider{margin:-30px 0 30px;padding:0 10px}.tea-slider .container{padding-left:35px;padding-right:35px}.tea-item .tea-image{width:88px;height:88px}.tea-item h6{font-size:11px}.tea-slider .slick-arrow.slick-prev{left:5px}.tea-slider .slick-arrow.slick-next{right:5px}.himalayan-section{padding:60px 20px}.leaf-img{opacity:.25;width:45%}.section-title h2{font-size:50px}.collection-heading{font-size:40px;padding-left:0}.product-content{text-align:center;margin-top:30px;margin-left:0}.product-number{left:15px}.product-card{flex-direction:column;align-items:center;text-align:center}.collection-section,.section-part7{padding:50px 0}.section-part7 .collection-heading{padding-left:0}.assam-intro-section .pe-5{padding-right:0!important}.story-section{padding:50px 0}.story-section .pe-4{padding-right:0!important}.story-section h5{font-size:24px}.story-section p{max-width:100%}.story-section h2{font-size:28px}.product-card img{max-width:100%;width:auto}.payment-section{padding:60px 0;text-align:center}.payment-section h3{font-size:1.75rem}.payment-section .qr-img{display:block;margin-left:auto;margin-right:auto}.quality-section .quality-section-top .text-left{text-align:center!important}.quality-section .quality-section-top h2{font-size:2.5rem}.featureList .feature{flex:0 0 calc(50% - 1rem);max-width:calc(50% - 1rem)}}
+@media(max-width:991px){.hero-section .overlay{border-radius:0 0 150px 0}.hero-section .container{padding-top:6rem}.bannerCaption{padding-top:0}.hero-section .row.min-vh-100{min-height:auto;padding-bottom:60px}.hero-title{font-size:3rem}.hero-desc{max-width:100%}.quality-badges{max-width:100%;margin-bottom:50px}.btn-shop{font-size:20px;padding:16px 32px}.badge-custom{margin-bottom:8px}.tea-slider{margin:-30px 0 30px;padding:0 10px}.tea-slider .container{padding-left:35px;padding-right:35px}.tea-item .tea-image{width:88px;height:88px}.tea-item h6{font-size:11px}.tea-slider .slick-arrow.slick-prev{left:5px}.tea-slider .slick-arrow.slick-next{right:5px}.himalayan-section{padding:60px 20px}.leaf-img{opacity:.25;width:45%}.section-title h2{font-size:50px}.collection-heading{font-size:40px;padding-left:0}.product-content{text-align:center;margin-top:30px;margin-left:0}.product-number{left:15px}.product-card{flex-direction:column;align-items:center;text-align:center}.collection-section,.section-part7{padding:50px 0}.section-part7 .collection-heading{padding-left:0}.assam-intro-section .pe-5{padding-right:0!important}.story-section{padding:50px 0}.story-section .pe-4{padding-right:0!important}.story-section h5{font-size:24px}.story-section p{max-width:100%}.story-section h2{font-size:28px}.product-card img{max-width:100%;width:auto}.payment-section{padding:60px 0;text-align:center}.payment-section h3{font-size:1.75rem}.payment-section .qr-img{display:block;margin-left:auto;margin-right:auto}.quality-section .quality-section-top .text-left{text-align:center!important}.quality-section .quality-section-top h2{font-size:2.5rem}.featureList .feature{flex:0 0 calc(50% - 1rem);max-width:calc(50% - 1rem)}}
 @media(max-width:575px){.header{padding:46px 0 0}.header .logo-img{max-width:90px}.hero-title{font-size:2rem;line-height:1.15;max-width:100%;margin-top:10px}.hero-desc{font-size:14px;line-height:1.6;max-width:100%;padding:0 5px}.hero-section .overlay{border-radius:0 0 100px 0}.hero-section .container{padding-top:1rem}.quality-badges{margin-bottom:20px;padding:0 5px}.badge-custom{min-width:auto;font-size:12px;margin-right:0;padding:6px 10px}.btn-shop{display:block;width:100%;max-width:300px;text-align:center;font-size:15px;padding:12px 20px;margin:0 auto}.mobile-contact{text-align:center}.tea-slider .container{padding-left:28px;padding-right:28px}.tea-item .tea-image{width:72px;height:72px}.section-title h2,.assam-title h2{font-size:36px}.collection-heading,.assam-heading{font-size:28px}.leaf-img{display:none}.collection-text,.assam-description{font-size:16px;line-height:1.7}.himalayan-section{padding:40px 15px}.collection-section,.section-part7,.assam-intro-section{padding:40px 0}.story-section h5{font-size:20px}.quality-section .quality-section-top h2{font-size:2rem}.featureList .feature{flex:0 0 100%;max-width:100%}.feature{font-size:28px}.product-content h4{font-size:22px}.price-box div{font-size:26px;justify-content:center}.payment-section h3{font-size:1.5rem}.payment-section .qr-img{width:100%;max-width:16rem}.footer-qr{margin:0 auto}.copyright-bar{font-size:12px;line-height:1.6}.copyright-bar .col-md-12{text-align:center!important}}
 .collection-section{padding:90px 0}
 .section-heading{margin-bottom:60px}
@@ -1057,6 +1056,28 @@ p.woocommerce-form-register__submit{width:100%}
 }
 
 /* =========================================
+   MOBILE HEADER BAR (replaces header + topbar on small screens)
+   ========================================= */
+.kt-mobile-header{display:none}
+@media(min-width:992px){
+    .kt-mobile-header{display:none!important}
+}
+@media(max-width:991px){
+    .kt-mobile-header{display:block;position:fixed;top:0;left:0;right:0;z-index:1003;background:rgba(0,0,0,.75);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:0}
+    body.admin-bar .kt-mobile-header{top:46px}
+    .kt-mobile-header-inner{display:flex;align-items:center;justify-content:space-between;padding:8px 16px}
+    .kt-mobile-logo-img{height:40px;width:auto}
+    .kt-mobile-nav{display:flex;align-items:center;gap:12px}
+    .kt-mobile-link{color:#fff;text-decoration:none;font-size:13px;font-weight:600;font-family:"Inter",sans-serif;white-space:nowrap}
+    .kt-mobile-link:hover{color:#b0cb1f}
+    .kt-mobile-cart{color:#fff;font-size:20px;text-decoration:none;position:relative}
+    .kt-mobile-cart .shop-cart-count{position:absolute;top:-6px;right:-8px;background:#b0cb1f;color:#000;font-size:10px;font-weight:700;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;line-height:1}
+    .kt-mobile-nav .menu-toggle{background:none;border:none;font-size:28px;color:#fff;cursor:pointer;line-height:1}
+    .header,.kt-hero-topbar{display:none!important}
+    .hero-section{min-height:calc(100dvh - 56px)}
+}
+
+/* =========================================
    COMPREHENSIVE RESPONSIVE STYLES
    ========================================= */
 
@@ -1092,20 +1113,7 @@ p.woocommerce-form-register__submit{width:100%}
     .shop-menu-toggle{font-size:18px}
 }
 
-/* ---- HOMEPAGE HEADER / TOPBAR - MOBILE ---- */
-@media(max-width:991px){
-    .kt-hero-topbar .kt-hero-topbar-link{font-size:12px;padding:5px 10px}
-    .kt-hero-topbar .kt-hero-topbar-btn{padding:6px 14px;font-size:11px}
-    .menu-toggle{font-size:28px;color:#fff;background:none;border:none}
-    .kt-hero-cart{font-size:20px;color:#fff}
-}
-@media(max-width:575px){
-    .kt-hero-topbar{gap:6px;padding:8px 12px}
-    .kt-hero-topbar .kt-hero-topbar-link{font-size:11px;padding:4px 8px}
-    .kt-hero-topbar .kt-hero-topbar-btn{padding:4px 10px;font-size:10px}
-    .menu-toggle{font-size:24px}
-    .kt-hero-cart .shop-cart-count{width:14px;height:14px;font-size:8px;top:-4px;right:-6px}
-}
+/* ---- HOMEPAGE HEADER / TOPBAR - MOBILE (hidden on mobile, replaced by kt-mobile-header) ---- */
 
 /* ---- HOMEPAGE PRODUCT CARDS (WooCommerce wrapper) - MOBILE ---- */
 @media(max-width:991px){
