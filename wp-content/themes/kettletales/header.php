@@ -14,7 +14,7 @@
     <header class="shop-header">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 col-md-5">
+                <div class="col-lg-4 col-md-5 col-6">
                     <div class="logo">
                         <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
                             <?php if ( has_custom_logo() ) : ?>
@@ -25,15 +25,15 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-7">
+                <div class="col-lg-8 col-md-7 col-6 text-end">
                     <nav class="shop-nav">
-                        <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="shop-nav-link"><?php esc_html_e( 'Shop', 'kettletales' ); ?></a>
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="shop-nav-link"><?php esc_html_e( 'Home', 'kettletales' ); ?></a>
+                        <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="shop-nav-link shop-nav-desktop"><?php esc_html_e( 'Shop', 'kettletales' ); ?></a>
+                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="shop-nav-link shop-nav-desktop"><?php esc_html_e( 'Home', 'kettletales' ); ?></a>
                         <?php if ( is_user_logged_in() ) : ?>
-                            <a href="<?php echo esc_url( wc_get_account_endpoint_url( 'dashboard' ) ); ?>" class="shop-nav-link"><?php esc_html_e( 'My Account', 'kettletales' ); ?></a>
+                            <a href="<?php echo esc_url( wc_get_account_endpoint_url( 'dashboard' ) ); ?>" class="shop-nav-link shop-nav-desktop"><?php esc_html_e( 'My Account', 'kettletales' ); ?></a>
                         <?php else : ?>
-                            <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="shop-nav-link"><?php esc_html_e( 'Sign in', 'kettletales' ); ?></a>
-                            <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) . '?register=1' ); ?>" class="shop-nav-link shop-nav-btn"><?php esc_html_e( 'Sign up', 'kettletales' ); ?></a>
+                            <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="shop-nav-link shop-nav-desktop"><?php esc_html_e( 'Sign in', 'kettletales' ); ?></a>
+                            <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) . '?register=1' ); ?>" class="shop-nav-link shop-nav-btn shop-nav-desktop"><?php esc_html_e( 'Sign up', 'kettletales' ); ?></a>
                         <?php endif; ?>
                         <div class="shop-cart">
                             <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="shop-cart-link">
@@ -41,8 +41,21 @@
                                 <span class="shop-cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
                             </a>
                         </div>
+                        <button class="shop-menu-toggle" aria-label="Toggle menu">
+                            <i class="fas fa-bars"></i>
+                        </button>
                     </nav>
                 </div>
+            </div>
+            <div class="shop-mobile-menu">
+                <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="shop-mobile-link"><?php esc_html_e( 'Shop', 'kettletales' ); ?></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="shop-mobile-link"><?php esc_html_e( 'Home', 'kettletales' ); ?></a>
+                <?php if ( is_user_logged_in() ) : ?>
+                    <a href="<?php echo esc_url( wc_get_account_endpoint_url( 'dashboard' ) ); ?>" class="shop-mobile-link"><?php esc_html_e( 'My Account', 'kettletales' ); ?></a>
+                <?php else : ?>
+                    <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="shop-mobile-link"><?php esc_html_e( 'Sign in', 'kettletales' ); ?></a>
+                    <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) . '?register=1' ); ?>" class="shop-mobile-link shop-mobile-btn"><?php esc_html_e( 'Sign up', 'kettletales' ); ?></a>
+                <?php endif; ?>
             </div>
         </div>
     </header>
