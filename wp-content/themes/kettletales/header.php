@@ -83,6 +83,31 @@
         </div>
     </header>
 
+    <!-- Mobile Header (visible only on <=991px, replaces header + topbar) -->
+    <header class="kt-mobile-header">
+        <div class="kt-mobile-header-inner">
+            <div class="kt-mobile-logo">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <img src="<?php echo esc_url( KETTLETALES_URI . '/assets/images/TeaLabel.png' ); ?>" class="kt-mobile-logo-img" alt="<?php bloginfo( 'name' ); ?>">
+                </a>
+            </div>
+            <div class="kt-mobile-nav">
+                <?php if ( is_user_logged_in() ) : ?>
+                    <a href="<?php echo esc_url( wc_get_account_endpoint_url( 'dashboard' ) ); ?>" class="kt-mobile-link"><?php esc_html_e( 'My Account', 'kettletales' ); ?></a>
+                <?php else : ?>
+                    <a href="<?php echo esc_url( wc_get_page_permalink( 'myaccount' ) ); ?>" class="kt-mobile-link"><?php esc_html_e( 'Sign in', 'kettletales' ); ?></a>
+                <?php endif; ?>
+                <a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="kt-mobile-cart" aria-label="<?php esc_attr_e( 'View Cart', 'kettletales' ); ?>">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="shop-cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+                </a>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    &#9776;
+                </button>
+            </div>
+        </div>
+    </header>
+
     <!-- Right Side Menu -->
     <nav class="side-menu">
         <?php if ( has_nav_menu( 'hamburger' ) ) : ?>
