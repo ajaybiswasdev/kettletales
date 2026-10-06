@@ -42,15 +42,15 @@ add_action( 'phpmailer_init', function( $phpmailer ) {
     $phpmailer->SMTPAuth   = true;
     $phpmailer->Port       = 465;
     $phpmailer->SMTPSecure = 'ssl';
-    $phpmailer->Username   = 'ajay.biswas0@gmail.com';
+    $phpmailer->Username   = 'kettletales.info@gmail.com';
     $phpmailer->Password   = 'ffda zmso gkns iqdt';
     $phpmailer->CharSet    = 'UTF-8';
-    $phpmailer->From       = 'ajay.biswas0@gmail.com';
+    $phpmailer->From       = 'kettletales.info@gmail.com';
     $phpmailer->FromName   = 'Kettle Tales';
 }, 99 );
 
 add_filter( 'wp_mail_from', function( $email ) {
-    return 'ajay.biswas0@gmail.com';
+    return 'kettletales.info@gmail.com';
 }, 1 );
 
 add_filter( 'wp_mail_from_name', function( $name ) {
