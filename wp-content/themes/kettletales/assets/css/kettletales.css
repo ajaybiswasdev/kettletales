@@ -6,7 +6,7 @@ html body{font-size:16px}
 body{font-family:"Inter",sans-serif;overflow-x:hidden;background:#feffeb;width:100%;margin:0}
 img{max-width:100%;height:auto}
 video{max-width:100%}
-.page{width:100%;max-width:100%;overflow-x:hidden}
+.page{width:100%;max-width:100%;}
 .action-btn{background-color:#007bff;color:#fff;border:none;padding:10px 25px;font-size:16px;border-radius:4px;cursor:pointer;transition:background-color .2s}
 .action-btn:hover{background-color:#0056b3}
 @media screen and (min-width:1400px){.container{max-width:1400px}.header{padding-top:16px}.side-menu{right:calc((100vw - 1400px)/2 + 12px);top:110px}.tea-slider{margin-top:-30px}}
