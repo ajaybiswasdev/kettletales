@@ -43,7 +43,7 @@ add_action( 'phpmailer_init', function( $phpmailer ) {
     $phpmailer->Port       = 465;
     $phpmailer->SMTPSecure = 'ssl';
     $phpmailer->Username   = 'kettletales.info@gmail.com';
-    $phpmailer->Password   = 'ffda zmso gkns iqdt';
+    $phpmailer->Password   = 'rorgctldmyafcpyx';
     $phpmailer->CharSet    = 'UTF-8';
     $phpmailer->From       = 'kettletales.info@gmail.com';
     $phpmailer->FromName   = 'Kettle Tales';
