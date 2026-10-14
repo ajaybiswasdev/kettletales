@@ -120,6 +120,7 @@ $delivery_text = get_theme_mod( 'footer_delivery_text', 'Complimentary Delivery 
                         get_bloginfo( 'name' )
                     );
                     ?>
+                    <a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_refund_returns_page_id' ) ) ); ?>" class="ms-3" style="color:#b0cb1f;text-decoration:none;font-weight:600">Refund &amp; Returns Policy</a>
                 </div>
             </div>
         </div>
