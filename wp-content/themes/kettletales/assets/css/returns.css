@@ -1,0 +1,309 @@
+/* =========================================
+   KettleTales Return Request System
+   ========================================= */
+
+/* Return Button */
+.kt-return-btn {
+    background: #fff3cd !important;
+    color: #856404 !important;
+    border: 1px solid #ffc107 !important;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    transition: all .3s;
+}
+.kt-return-btn:hover {
+    background: #ffc107 !important;
+    color: #000 !important;
+}
+
+/* Modal Overlay */
+.kt-return-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kt-return-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.6);
+    backdrop-filter: blur(4px);
+}
+
+/* Modal Content */
+.kt-return-modal-content {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    width: 95%;
+    max-width: 520px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,.3);
+    animation: ktReturnSlideUp .3s ease;
+}
+@keyframes ktReturnSlideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header */
+.kt-return-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 24px;
+    border-bottom: 1px solid #eee;
+    background: #feffeb;
+    border-radius: 16px 16px 0 0;
+}
+.kt-return-modal-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    font-family: "Inter", sans-serif;
+}
+.kt-return-modal-header h3 i {
+    color: #b0cb1f;
+    margin-right: 8px;
+}
+.kt-return-close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #999;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: .2s;
+}
+.kt-return-close:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+/* Body */
+.kt-return-modal-body {
+    padding: 24px;
+}
+
+/* Fields */
+.kt-return-field {
+    margin-bottom: 16px;
+}
+.kt-return-field label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+    font-family: "Inter", sans-serif;
+}
+.kt-return-field select,
+.kt-return-field textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #333;
+    background: #fff;
+    transition: border .2s;
+    box-sizing: border-box;
+}
+.kt-return-field select:focus,
+.kt-return-field textarea:focus {
+    outline: none;
+    border-color: #b0cb1f;
+}
+.kt-return-field textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+/* Photo Upload */
+.kt-return-photo-upload {
+    position: relative;
+    border: 2px dashed #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+    background: #fafafa;
+}
+.kt-return-photo-upload:hover {
+    border-color: #b0cb1f;
+    background: #feffeb;
+}
+.kt-return-photo-upload i {
+    font-size: 28px;
+    color: #bbb;
+    margin-bottom: 6px;
+    display: block;
+}
+.kt-return-photo-upload span {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    font-weight: 600;
+}
+.kt-return-photo-upload small {
+    display: block;
+    font-size: 11px;
+    color: #999;
+    margin-top: 4px;
+}
+.kt-return-photo-upload input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Photo Preview */
+.kt-return-photo-preview {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+.kt-return-photo-preview img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #b0cb1f;
+}
+.kt-return-remove-photo {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* Notice */
+.kt-return-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+    background: #e8f4fd;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: #0c5460;
+    line-height: 1.5;
+}
+.kt-return-notice i {
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* Message */
+.kt-return-msg {
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-family: "Inter", sans-serif;
+}
+.kt-return-msg.success {
+    background: #d4edda;
+    color: #155724;
+}
+.kt-return-msg.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Actions */
+.kt-return-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.kt-return-cancel {
+    padding: 10px 20px;
+    border: 1.5px solid #ddd;
+    border-radius: 30px;
+    background: #fff;
+    color: #666;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    transition: .2s;
+}
+.kt-return-cancel:hover {
+    background: #f5f5f5;
+    border-color: #bbb;
+}
+.kt-return-submit {
+    padding: 10px 24px;
+    border: none;
+    border-radius: 30px;
+    background: #b0cb1f;
+    color: #000;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    transition: .2s;
+}
+.kt-return-submit:hover:not(:disabled) {
+    background: #000;
+    color: #b0cb1f;
+}
+.kt-return-submit:disabled {
+    background: #e0e0e0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+/* Mobile */
+@media(max-width:575px) {
+    .kt-return-modal-content {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100vh;
+        border-radius: 0;
+        min-height: 100vh;
+    }
+    .kt-return-modal-header {
+        border-radius: 0;
+        padding: 14px 16px;
+    }
+    .kt-return-modal-body {
+        padding: 16px;
+    }
+    .kt-return-actions {
+        flex-direction: column;
+    }
+    .kt-return-cancel,
+    .kt-return-submit {
+        width: 100%;
+        text-align: center;
+    }
+}

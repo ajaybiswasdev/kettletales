@@ -53,6 +53,18 @@ do_action( 'woocommerce_before_account_orders', $has_orders ); ?>
                 </div>
                 <div class="kt-order-card-action">
                     <a href="<?php echo esc_url( $order->get_view_order_url() ); ?>" class="kt-ov-btn"><?php esc_html_e( 'View', 'kettletales' ); ?> <i class="fas fa-arrow-right"></i></a>
+                    <?php
+                    $return_eligible = in_array( $status, array( 'completed', 'processing', 'on-hold' ) );
+                    $has_return = function_exists( 'kettletales_has_return_request' ) ? kettletales_has_return_request( $order->get_id() ) : 0;
+                    if ( $return_eligible && ! $has_return ) :
+                        $return_products = function_exists( 'kettletales_return_order_products_json' ) ? kettletales_return_order_products_json( $order->get_id() ) : array();
+                    ?>
+                        <button type="button" class="kt-ov-btn kt-return-btn"
+                            data-order="<?php echo esc_attr( $order->get_id() ); ?>"
+                            data-products="<?php echo esc_attr( wp_json_encode( $return_products ) ); ?>">
+                            <i class="fas fa-undo"></i> <?php esc_html_e( 'Request Return', 'kettletales' ); ?>
+                        </button>
+                    <?php endif; ?>
                 </div>
             </div>
         <?php endforeach; ?>

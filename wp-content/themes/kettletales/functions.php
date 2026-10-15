@@ -13,6 +13,7 @@ require_once KETTLETALES_DIR . '/inc/theme-setup.php';
 require_once KETTLETALES_DIR . '/inc/enqueue.php';
 require_once KETTLETALES_DIR . '/inc/woocommerce.php';
 require_once KETTLETALES_DIR . '/inc/customizer.php';
+require_once KETTLETALES_DIR . '/inc/returns.php';
 
 /**
  * Disable WooCommerce Coming Soon mode
