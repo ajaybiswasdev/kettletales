@@ -309,9 +309,10 @@ button.button.alt:hover,button.button:hover,a.button.alt:hover,a.button:hover,.c
 .kt-update-btn i{font-size:12px}
 
 /* Shipping destination address */
-.kt-shipping-dest{font-size:12px;color:#888;padding:0 0 4px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-.kt-shipping-dest i{color:#b0cb1f;font-size:11px}
-.kt-shipping-dest a{color:#617010;text-decoration:underline;font-weight:500;margin-left:auto}
+.kt-shipping-dest{font-size:13px;color:#555;padding:6px 0 0;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.kt-shipping-dest i{color:#b0cb1f;font-size:13px}
+.kt-shipping-dest a{color:#617010;font-weight:600;font-size:12px;margin-left:auto;padding:7px 16px;background:#f5f7f0;border:1px solid #e2e8d0;border-radius:8px;text-decoration:none;transition:.25s;white-space:nowrap}
+.kt-shipping-dest a:hover{background:#b0cb1f;color:#000;border-color:#b0cb1f}
 
 /* Coupon card */
 .kt-cart-coupon{background:#fff;border:1px solid #f0f0f0;border-radius:14px;padding:20px;margin-bottom:16px}
@@ -325,19 +326,28 @@ button.button.alt:hover,button.button:hover,a.button.alt:hover,a.button:hover,.c
 .kt-coupon-btn:hover{background:#b0cb1f;color:#000}
 
 /* Shipping calculator */
-.kt-shipping-calculator{margin-top:12px;padding:16px;background:#f9fafb;border:1px solid #f0f0f0;border-radius:10px}
+.kt-shipping-calculator{margin-top:14px;padding:20px;background:#fafef5;border:1px solid rgba(176,203,31,.2);border-radius:12px}
 .kt-shipping-calculator .woocommerce-shipping-calculator{display:block}
-.kt-shipping-calculator label{font-size:12px;font-weight:600;color:#555;margin-bottom:4px;display:block;font-family:"Inter",sans-serif}
-.kt-shipping-calculator select,.kt-shipping-calculator input[type="text"]{width:100%;padding:10px 12px;border:1.5px solid #e0e0e0;border-radius:8px;font-size:13px;font-family:"Inter",sans-serif;background:#fff;transition:.25s;margin-bottom:12px;appearance:auto}
-.kt-shipping-calculator select:focus,.kt-shipping-calculator input[type="text"]:focus{border-color:#b0cb1f;outline:none}
-.kt-shipping-calculator .button{width:100%;padding:10px;border:none;border-radius:8px;background:#b0cb1f;color:#000;font-size:13px;font-weight:700;font-family:"Inter",sans-serif;cursor:pointer;transition:.25s;margin-top:4px}
-.kt-shipping-calculator .button:hover{background:#1a1a1a;color:#b0cb1f}
-.kt-shipping-calculator .form-row{margin-bottom:0}
-.woocommerce-shipping-calculator p{margin-bottom:0}
-.woocommerce-shipping-calculator .button.alt,.woocommerce-shipping-calculator .button{background:#b0cb1f;border:none;color:#000;padding:10px 20px;border-radius:8px;font-weight:700;font-size:13px}
-.woocommerce-shipping-calculator .button.alt:hover,.woocommerce-shipping-calculator .button:hover{background:#1a1a1a;color:#b0cb1f}
-#kt-toggle-shipping-calc{display:inline-block;margin-top:8px;padding:8px 16px;background:#f9fafb;border:1px solid #e0e0e0;border-radius:8px;color:#555;font-size:12px;font-weight:600;text-decoration:none;transition:.25s;cursor:pointer}
+.kt-shipping-calculator .woocommerce-shipping-calculator .shipping-calculator-button{display:none}
+.kt-shipping-calculator .woocommerce-shipping-calculator .shipping-calculator-form{display:block!important}
+.kt-shipping-calculator .woocommerce-shipping-calculator p{margin-bottom:0}
+.kt-shipping-calculator label{font-size:12px;font-weight:600;color:#333;margin-bottom:6px;display:block;font-family:"Inter",sans-serif}
+.kt-shipping-calculator label .required{color:#c00}
+.kt-shipping-calculator .form-row{margin-bottom:0;padding:0}
+.kt-shipping-calculator select,
+.kt-shipping-calculator input[type="text"]{width:100%;padding:11px 14px;border:1.5px solid #e0e0e0;border-radius:10px;font-size:14px;font-family:"Inter",sans-serif;background:#fff;transition:.25s;margin-bottom:14px;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.kt-shipping-calculator input[type="text"]{background-image:none}
+.kt-shipping-calculator select:focus,
+.kt-shipping-calculator input[type="text"]:focus{border-color:#b0cb1f;outline:none;box-shadow:0 0 0 3px rgba(176,203,31,.12)}
+.kt-shipping-calculator select:hover,
+.kt-shipping-calculator input[type="text"]:hover{border-color:#c0c0c0}
+.kt-shipping-calculator .button,
+.kt-shipping-calculator .button.alt{width:100%;padding:12px 24px;border:none;border-radius:10px;background:#b0cb1f;color:#000;font-size:14px;font-weight:700;font-family:"Inter",sans-serif;cursor:pointer;transition:.25s;margin-top:2px;display:flex;align-items:center;justify-content:center;gap:8px}
+.kt-shipping-calculator .button:hover,
+.kt-shipping-calculator .button.alt:hover{background:#1a1a1a;color:#b0cb1f;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+#kt-toggle-shipping-calc{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:8px 18px;background:#f5f7f0;border:1px solid #e2e8d0;border-radius:8px;color:#617010;font-size:12px;font-weight:600;text-decoration:none;transition:.25s;cursor:pointer;font-family:"Inter",sans-serif}
 #kt-toggle-shipping-calc:hover{background:#b0cb1f;color:#000;border-color:#b0cb1f}
+#kt-toggle-shipping-calc i{font-size:11px}
 
 /* Discount row */
 .kt-discount-row{background:transparent!important}

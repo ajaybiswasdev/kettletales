@@ -166,7 +166,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                                     $parts[] = WC()->countries->countries[ $dest_country ] ?? $dest_country;
                                     echo esc_html( implode( ', ', $parts ) );
                                     ?>
-                                    <a href="#" id="kt-toggle-shipping-calc" onclick="document.getElementById('kt-shipping-calculator').style.display=document.getElementById('kt-shipping-calculator').style.display==='block'?'none':'block';return false;"><i class="fas fa-map-marker-alt" style="margin-right:4px;"></i> <?php esc_html_e( 'Calculate shipping', 'kettletales' ); ?></a>
+                                    <a href="#" id="kt-toggle-shipping-calc" onclick="document.getElementById('kt-shipping-calculator').style.display=document.getElementById('kt-shipping-calculator').style.display==='block'?'none':'block';return false;"><i class="fas fa-map-marker-alt"></i> <?php esc_html_e( 'Calculate shipping', 'kettletales' ); ?></a>
                                 </div>
                             <?php endif; ?>
                             <div id="kt-shipping-calculator" style="display:none;" class="kt-shipping-calculator">
