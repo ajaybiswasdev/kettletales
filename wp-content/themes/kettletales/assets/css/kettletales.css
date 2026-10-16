@@ -327,24 +327,26 @@ button.button.alt:hover,button.button:hover,a.button.alt:hover,a.button:hover,.c
 
 /* Shipping calculator */
 .kt-shipping-calculator{margin-top:14px;padding:20px;background:#fafef5;border:1px solid rgba(176,203,31,.2);border-radius:12px}
-.kt-shipping-calculator .woocommerce-shipping-calculator{display:block}
-.kt-shipping-calculator .woocommerce-shipping-calculator .shipping-calculator-button{display:none}
-.kt-shipping-calculator .woocommerce-shipping-calculator .shipping-calculator-form{display:block!important}
-.kt-shipping-calculator .woocommerce-shipping-calculator p{margin-bottom:0}
-.kt-shipping-calculator label{font-size:12px;font-weight:600;color:#333;margin-bottom:6px;display:block;font-family:"Inter",sans-serif}
-.kt-shipping-calculator label .required{color:#c00}
-.kt-shipping-calculator .form-row{margin-bottom:0;padding:0}
-.kt-shipping-calculator select,
-.kt-shipping-calculator input[type="text"]{width:100%;padding:11px 14px;border:1.5px solid #e0e0e0;border-radius:10px;font-size:14px;font-family:"Inter",sans-serif;background:#fff;transition:.25s;margin-bottom:14px;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
-.kt-shipping-calculator input[type="text"]{background-image:none}
-.kt-shipping-calculator select:focus,
-.kt-shipping-calculator input[type="text"]:focus{border-color:#b0cb1f;outline:none;box-shadow:0 0 0 3px rgba(176,203,31,.12)}
-.kt-shipping-calculator select:hover,
-.kt-shipping-calculator input[type="text"]:hover{border-color:#c0c0c0}
-.kt-shipping-calculator .button,
-.kt-shipping-calculator .button.alt{width:100%;padding:12px 24px;border:none;border-radius:10px;background:#b0cb1f;color:#000;font-size:14px;font-weight:700;font-family:"Inter",sans-serif;cursor:pointer;transition:.25s;margin-top:2px;display:flex;align-items:center;justify-content:center;gap:8px}
-.kt-shipping-calculator .button:hover,
-.kt-shipping-calculator .button.alt:hover{background:#1a1a1a;color:#b0cb1f;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.kt-shipping-calculator .woocommerce-shipping-calculator{display:block;margin:0}
+.kt-shipping-calculator .shipping-calculator-form{display:block!important}
+.kt-calc-field{margin-bottom:14px}
+.kt-calc-field:last-child{margin-bottom:0}
+.kt-calc-field label{display:block;font-size:13px;font-weight:600;color:#333;margin-bottom:6px;font-family:"Inter",sans-serif}
+.kt-calc-field label .required{color:#c00}
+.kt-calc-field select,
+.kt-calc-field input[type="text"]{width:100%;padding:11px 14px;border:1.5px solid #e0e0e0;border-radius:10px;font-size:14px;font-family:"Inter",sans-serif;background:#fff;color:#333;transition:.25s;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.kt-calc-field input[type="text"]{background-image:none}
+.kt-calc-field select:focus,
+.kt-calc-field input[type="text"]:focus{border-color:#b0cb1f;outline:none;box-shadow:0 0 0 3px rgba(176,203,31,.12)}
+.kt-calc-field select:hover,
+.kt-calc-field input[type="text"]:hover{border-color:#c5c5c5}
+.kt-calc-field select:required:invalid,
+.kt-calc-field select:invalid{color:#bbb}
+.kt-calc-field option{color:#333}
+.kt-calc-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kt-calc-update-btn{width:100%;padding:13px 24px;border:none;border-radius:10px;background:#b0cb1f;color:#000;font-size:14px;font-weight:700;font-family:"Inter",sans-serif;cursor:pointer;transition:.25s;margin-top:6px;display:flex;align-items:center;justify-content:center;gap:8px}
+.kt-calc-update-btn:hover{background:#1a1a1a;color:#b0cb1f;transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.kt-calc-update-btn i{font-size:13px}
 #kt-toggle-shipping-calc{display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:8px 18px;background:#f5f7f0;border:1px solid #e2e8d0;border-radius:8px;color:#617010;font-size:12px;font-weight:600;text-decoration:none;transition:.25s;cursor:pointer;font-family:"Inter",sans-serif}
 #kt-toggle-shipping-calc:hover{background:#b0cb1f;color:#000;border-color:#b0cb1f}
 #kt-toggle-shipping-calc i{font-size:11px}
@@ -1334,7 +1336,8 @@ p.woocommerce-form-register__submit{width:100%}
     .kt-coupon-btn{width:36px;height:36px;font-size:12px}
     .kt-proceed-btn{padding:12px;font-size:14px}
     .kt-update-btn{padding:10px;font-size:13px}
-    .kt-shipping-calculator{padding:12px}
+    .kt-shipping-calculator{padding:14px}
+    .kt-calc-row{grid-template-columns:1fr}
     .kt-totals-shipping-note{font-size:11px;padding:8px 12px}
     .kt-discount-row span{font-size:12px}
     .kt-discount-row{padding:6px 0}
