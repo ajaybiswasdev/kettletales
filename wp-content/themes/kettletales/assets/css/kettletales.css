@@ -461,15 +461,17 @@ p.woocommerce-form-register__submit{width:100%}
 .kt-reset-field .input-text{width:100%!important;max-width:100%!important}
 .kt-reset-field label{display:block;font-size:13px;font-weight:600;color:#333;margin-bottom:6px;font-family:"Inter",sans-serif}
 .kt-reset-field .required{color:#dc3545}
-.kt-input-wrap{position:relative;display:flex;align-items:center}
-.kt-input-wrap i:first-child{position:absolute;left:14px;color:#aaa;font-size:14px;pointer-events:none}
-.kt-input-wrap input.input-text{width:100%;padding:12px 44px 12px 40px;border:1.5px solid #e0e0e0;border-radius:10px;font-size:14px;font-family:"Inter",sans-serif;color:#333;transition:.2s;box-sizing:border-box;background:#fafafa}
+.kt-input-wrap{position:relative;display:flex;flex-wrap:wrap;align-items:center;width:100%}
+.kt-input-wrap>i:first-child{position:absolute;left:14px;color:#aaa;font-size:14px;pointer-events:none;z-index:1}
+.kt-input-wrap input.input-text{width:100%;padding:12px 44px 12px 40px;border:1.5px solid #e0e0e0;border-radius:10px;font-size:14px;font-family:"Inter",sans-serif;color:#333;transition:.2s;box-sizing:border-box;background:#fafafa;flex:0 0 100%}
 .kt-input-wrap input.input-text:focus{outline:none;border-color:#b0cb1f;background:#fff;box-shadow:0 0 0 3px rgba(176,203,31,.15)}
-.woocommerce-password-strength{font-size:12px;font-weight:600;font-family:"Inter",sans-serif;margin-top:6px;padding:0!important;border:none!important;background:none!important}
+.kt-toggle-pass{position:absolute;right:12px;background:none;border:none;color:#aaa;cursor:pointer;font-size:14px;padding:4px;transition:.2s;z-index:1}
+.kt-toggle-pass:hover{color:#333}
+.woocommerce-password-strength{display:block!important;width:100%;flex:0 0 100%;font-size:12px;font-weight:600;font-family:"Inter",sans-serif;margin-top:6px;padding:0!important;border:none!important;background:none!important;text-align:left}
 .woocommerce-password-strength.strong{color:#28a745}
 .woocommerce-password-strength.medium{color:#ffc107}
-.woocommerce-password-strength.short{color:#dc3545}
-.woocommerce-password-hint{font-size:12px;color:#888;margin-top:4px;line-height:1.5;display:block!important}
+.woocommerce-password-strength.short,.woocommerce-password-strength.very-weak{color:#dc3545}
+.woocommerce-password-hint{display:block!important;width:100%;flex:0 0 100%;font-size:12px;color:#888;margin-top:4px;line-height:1.5;text-align:left}
 .kt-toggle-pass{position:absolute;right:12px;background:none;border:none;color:#aaa;cursor:pointer;font-size:14px;padding:4px;transition:.2s}
 .kt-toggle-pass:hover{color:#333}
 .kt-reset-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px 24px;border:none;border-radius:30px;background:#b0cb1f;color:#000;font-size:15px;font-weight:700;font-family:"Inter",sans-serif;cursor:pointer;transition:.3s;margin-top:8px}
