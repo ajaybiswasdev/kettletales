@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 
             <div class="kt-reset-field">
                 <label for="password_1"><?php esc_html_e( 'New password', 'kettletales' ); ?> <span class="required">*</span></label>
-                <div class="kt-input-wrap">
+                <div class="kt-input-box">
                     <i class="fas fa-lock"></i>
                     <input type="password" class="input-text" name="password_1" id="password_1" autocomplete="new-password" required>
                     <button type="button" class="kt-toggle-pass" data-target="password_1"><i class="fas fa-eye"></i></button>
@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) || exit;
 
             <div class="kt-reset-field">
                 <label for="password_2"><?php esc_html_e( 'Re-enter new password', 'kettletales' ); ?> <span class="required">*</span></label>
-                <div class="kt-input-wrap">
+                <div class="kt-input-box">
                     <i class="fas fa-lock"></i>
                     <input type="password" class="input-text" name="password_2" id="password_2" autocomplete="new-password" required>
                     <button type="button" class="kt-toggle-pass" data-target="password_2"><i class="fas fa-eye"></i></button>
