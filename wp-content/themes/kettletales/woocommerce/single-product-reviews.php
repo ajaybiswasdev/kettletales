@@ -148,6 +148,7 @@ if ( $count > 0 ) {
 					<input type="hidden" name="comment_post_ID" value="<?php echo esc_attr( $comment_post_ID ); ?>">
 					<input type="hidden" name="comment_parent" value="0">
 					<?php wp_nonce_field( 'kettletales-review', 'kt-review-nonce' ); ?>
+					<?php wp_nonce_field( 'unfiltered-html-comment', '_wp_unfiltered_html_comment_disabled', false ); ?>
 
 				</form>
 			</div>
