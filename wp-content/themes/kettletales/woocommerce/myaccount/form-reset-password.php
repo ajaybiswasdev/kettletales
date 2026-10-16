@@ -39,9 +39,11 @@ defined( 'ABSPATH' ) || exit;
                 </div>
             </div>
 
+            <input type="hidden" name="reset_key" value="<?php echo esc_attr( $args['key'] ); ?>" />
+            <input type="hidden" name="reset_login" value="<?php echo esc_attr( $args['login'] ); ?>" />
             <input type="hidden" name="wc_reset_password" value="true" />
 
-            <?php wp_nonce_field( 'reset_password', 'reset-password-nonce' ); ?>
+            <?php wp_nonce_field( 'reset_password', 'woocommerce-reset-password-nonce' ); ?>
 
             <button type="submit" class="kt-reset-btn">
                 <i class="fas fa-check"></i> <?php esc_html_e( 'Save New Password', 'kettletales' ); ?>
