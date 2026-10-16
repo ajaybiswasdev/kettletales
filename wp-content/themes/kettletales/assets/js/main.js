@@ -329,4 +329,25 @@ $(document).ready(function() {
     });
 });
 
+/* Move WooCommerce password strength/hint outside kt-input-box */
+$(document).ready(function() {
+    function moveStrengthElements() {
+        $('.kt-input-box').each(function() {
+            var $box = $(this);
+            var $strength = $box.find('.woocommerce-password-strength');
+            var $hint = $box.find('.woocommerce-password-hint');
+            if ($strength.length) {
+                $strength.insertAfter($box);
+            }
+            if ($hint.length) {
+                $hint.insertAfter($box);
+            }
+        });
+    }
+    moveStrengthElements();
+    $(document).on('keyup', 'input[name="password_1"], input[name="password_2"]', function() {
+        setTimeout(moveStrengthElements, 50);
+    });
+});
+
 })(jQuery);
