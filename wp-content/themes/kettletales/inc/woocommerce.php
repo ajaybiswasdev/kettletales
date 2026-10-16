@@ -371,8 +371,8 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'kettletales_cart_fragments' );
 /**
  * Kolkata postcode shipping: 700xxx = FREE, rest of WB = ₹30, other states = ₹80.
  *
- * WooCommerce Blocks doesn't support postcode ranges, so we override flat_rate
- * cost at runtime based on the customer's postcode.
+ * Rates are now managed via WooCommerce → Settings → Shipping (admin panel).
+ * This filter only handles Kolkata postcode (700xxx) detection for free shipping.
  */
 function kettletales_kolkata_shipping_rate( $rates, $package ) {
     if ( empty( $rates ) ) {
@@ -393,15 +393,10 @@ function kettletales_kolkata_shipping_rate( $rates, $package ) {
             continue;
         }
 
+        // Kolkata (700xxx) = FREE
         if ( 'WB' === $state && strlen( $postcode ) === 6 && substr( $postcode, 0, 3 ) === '700' ) {
             $rate->cost = '0';
             $rate->set_label( 'Kolkata Local (Free)' );
-        } elseif ( 'WB' === $state ) {
-            $rate->cost = '30';
-            $rate->set_label( 'Rest of West Bengal' );
-        } else {
-            $rate->cost = '80';
-            $rate->set_label( 'Other States' );
         }
     }
 
