@@ -8,7 +8,10 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<?php if ( function_exists( 'is_woocommerce' ) && ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() ) ) : ?>
+<?php
+$kt_is_shop_header = function_exists( 'is_woocommerce' ) && ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() );
+?>
+<?php if ( $kt_is_shop_header ) : ?>
 
     <!-- Shop Header -->
     <header class="shop-header">
@@ -152,4 +155,4 @@
     <div class="menu-overlay"></div>
 
 <?php endif; ?>
-<div class="page">
+<div class="page<?php echo $kt_is_shop_header ? '' : ' kt-std-page'; ?>">

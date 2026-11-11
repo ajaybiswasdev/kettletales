@@ -5,7 +5,7 @@
  * @package KettleTales
  */
 
-define( 'KETTLETALES_VERSION', '1.1.0' );
+define( 'KETTLETALES_VERSION', '1.1.2' );
 define( 'KETTLETALES_DIR', get_template_directory() );
 define( 'KETTLETALES_URI', get_template_directory_uri() );
 
