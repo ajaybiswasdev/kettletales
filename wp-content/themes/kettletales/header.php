@@ -92,6 +92,7 @@
                 </a>
             </div>
             <div class="kt-mobile-nav">
+                <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="kt-mobile-link kt-mobile-shop"><i class="fas fa-store"></i> <?php esc_html_e( 'Shop', 'kettletales' ); ?></a>
                 <?php if ( is_user_logged_in() ) : ?>
                     <a href="<?php echo esc_url( wc_get_account_endpoint_url( 'dashboard' ) ); ?>" class="kt-mobile-link"><?php esc_html_e( 'My Account', 'kettletales' ); ?></a>
                 <?php else : ?>
@@ -120,10 +121,11 @@
             ) ); ?>
         <?php else : ?>
             <ul>
+                <li><a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>"><?php esc_html_e( 'Shop', 'kettletales' ); ?> &#127805;</a></li>
                 <li><a href="#home"><?php esc_html_e( 'Home', 'kettletales' ); ?></a></li>
-                <li><a href="#collections"><?php esc_html_e( 'Himalayan Collection', 'kettletales' ); ?> &#127807;</li>
-                <li><a href="#assam"><?php esc_html_e( 'Signature Collection', 'kettletales' ); ?> &#127807;</li>
-                <li><a href="#wellness"><?php esc_html_e( 'Wellness Collection', 'kettletales' ); ?> &#127807;</li>
+                <li><a href="#collections"><?php esc_html_e( 'Himalayan Collection', 'kettletales' ); ?> &#127807;</a></li>
+                <li><a href="#assam"><?php esc_html_e( 'Signature Collection', 'kettletales' ); ?> &#127807;</a></li>
+                <li><a href="#wellness"><?php esc_html_e( 'Wellness Collection', 'kettletales' ); ?> &#127807;</a></li>
                 <li><a href="#story"><?php esc_html_e( 'Our Story', 'kettletales' ); ?></a></li>
                 <li><a href="#quality"><?php esc_html_e( 'Quality & Sourcing', 'kettletales' ); ?></a></li>
                 <li><a href="#contact"><?php esc_html_e( 'Contact', 'kettletales' ); ?></a></li>
@@ -132,6 +134,7 @@
         <span class="menu-line"></span>
     </nav>
     <div class="kt-hero-topbar">
+        <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="kt-hero-topbar-link kt-hero-topbar-shop"><i class="fas fa-store"></i> <?php esc_html_e( 'Shop', 'kettletales' ); ?></a>
         <?php if ( is_user_logged_in() ) : ?>
             <a href="<?php echo esc_url( wc_get_account_endpoint_url( 'dashboard' ) ); ?>" class="kt-hero-topbar-link"><?php esc_html_e( 'My Account', 'kettletales' ); ?></a>
         <?php else : ?>
